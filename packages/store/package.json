@@ -1,7 +1,10 @@
 {
-  "name": "@repo/db",
+  "name": "@repo/store",
   "version": "1.0.0",
   "main": "index.js",
+  "exports": {
+    "./useBalance": "./src/hooks/useBalance"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -9,11 +12,7 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "exports": {
-    "./client": "./index.ts"
-  },
   "dependencies": {
-    "@prisma/client": "^5.21.1",
-    "prisma": "^5.21.1"
+    "recoil": "^0.7.7"
   }
 }
